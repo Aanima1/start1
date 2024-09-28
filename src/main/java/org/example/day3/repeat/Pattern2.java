@@ -1,0 +1,4 @@
+package org.example.day3.repeat;
+
+public class Pattern2 {
+}
