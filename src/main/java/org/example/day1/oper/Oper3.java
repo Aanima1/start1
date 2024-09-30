@@ -19,7 +19,7 @@ public class Oper3 {
         int sum = a2+b2;
         double result = (double)sum/2; //캐스팅 타입변환
         System.out.println("두 입력값의 평균: "+result);
-        JOptionPane.showMessageDialog(null, result); // 위치->null : 가운데에 뜸
+        JOptionPane.showMessageDialog(null, "두 입력값의 평균\n"+result); // 위치->null : 가운데에 뜸
 
 
 
