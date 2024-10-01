@@ -25,9 +25,9 @@ public class ArrayStudy2 {
         float avr = (float) sum / n.length;
 //        BigDecimal avrRounded = new BigDecimal(avr).setScale(9, RoundingMode.HALF_UP);
 
-        System.out.println("\t"+"\t"+"------------");
-        System.out.println("합계 "+sum);
-        System.out.println("평균 "+avr);
+        System.out.println("\t" + "\t" + "------------");
+        System.out.println("합계 " + sum);
+        System.out.println("평균 " + avr);
 
 
         sc.close();
