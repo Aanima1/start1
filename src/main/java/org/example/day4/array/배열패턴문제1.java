@@ -15,10 +15,12 @@ public class 배열패턴문제1 {
 
 
         for (int i = 0; i < num.length; i++) {
-            num[i] = r.nextInt(100 + 1);
+            num[i] = r.nextInt(100) + 1;
         }
-        System.out.println(Arrays.toString(num));
 
+        System.out.println(Arrays.toString(num)); //비파괴형
+        Arrays.sort(num); //파괴형, 원본 배열을 오름차순으로 정렬
+        System.out.println(Arrays.toString(num));
 
         //2. 배열에 있는 값을 꺼내어 누적
         // 2-1. 감소하여 누적하는 변수 minus선언하여 초기화
@@ -28,6 +30,7 @@ public class 배열패턴문제1 {
         for (int i = 0; i < num.length; i++) {
             minus = minus - num[i];
         }
+
         System.out.println(minus);
 
         //3. 배열에 있는 값을 반복해서 처리하는데 조건이 있는 경우
@@ -47,8 +50,8 @@ public class 배열패턴문제1 {
         // 4-1. 배열내에 80보다 큰 값의 위치를 맨 앞부터 하나만 찾아 위치 프린트
         // 4-2. 80보다 큰 값을 찾으면 반복문 종료
         for (int i = 0; i < num.length; i++) {
-            if(num[i] > 80){
-                System.out.println(i+1 +"번째에서 발견!");
+            if (num[i] > 80) {
+                System.out.println(i + 1 + "번째에서 발견!");
                 break;
             } //if
         } // for
