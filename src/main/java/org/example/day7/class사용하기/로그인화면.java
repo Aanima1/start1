@@ -45,9 +45,9 @@ public class 로그인화면 {
         del.setBackground(Color.GREEN);
 
         //넣어서해보기
-        JLabel err = new JLabel();
-        err.setText("아이디나 비밀번호를 잘못 입력했습니다. 다시 입력하세요");
-        err.setForeground(Color.RED);
+//        JLabel err = new JLabel();
+//        err.setText("아이디나 비밀번호를 잘못 입력했습니다. 다시 입력하세요");
+//        err.setForeground(Color.RED);
 
         //이미지를 넣을 때는 이미지 아이콘으로 만들어서 버튼에 설정해야함.
         ImageIcon icon = new ImageIcon("ok.png");
@@ -85,7 +85,7 @@ public class 로그인화면 {
 //                        JOptionPane.showMessageDialog(frame, "로그인 성공!!");
                     } else {
                         frame.setTitle("로그인 실패!!");
-                        err.add(frame, BorderLayout.PAGE_END);
+//                        err.add(frame, BorderLayout.PAGE_END);
                     }
                 } else {
                     frame.setTitle("아이디나 패스워드를 다시 입력하시오.");
