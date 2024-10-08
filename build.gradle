@@ -9,9 +9,15 @@ repositories {
     mavenCentral()
 }
 
-dependencies {
+dependencies {  // 의존 -> 내 프로젝트에 필요한 부품
     testImplementation platform('org.junit:junit-bom:5.10.0')
     testImplementation 'org.junit.jupiter:junit-jupiter'
+    // https://mvnrepository.com/artifact/org.jsoup/jsoup
+//    implementation 'org.jsoup:jsoup:1.18.1'     // 크롤링하는데 필요한 부품
+
+    // https://mvnrepository.com/artifact/org.jsoup/jsoup
+    implementation group: 'org.jsoup', name: 'jsoup', version: '1.18.1'
+
 }
 
 test {
