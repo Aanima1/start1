@@ -59,7 +59,7 @@ public class Q3Cli {
                 }
 
             } catch (NumberFormatException ex) {
-                System.out.println("숫자로 입력하세요.");
+                System.out.println("숫자로 입력하세요!");
             } // try-catch
 
 
