@@ -4,6 +4,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class 일기쓰기화면 {
     public static void main(String[] args) {
@@ -67,6 +69,18 @@ public class 일기쓰기화면 {
                 } else {
                     JOptionPane.showMessageDialog(f, "다시 입력하십시오.");
 
+                }
+
+                //파일도 만들어주고, 스트림으로 데이터를 저장까지 해주는 기능을 부품!
+                try {
+                    FileWriter file = new FileWriter(weather2 + ".txt");
+                    file.write(weather2 + "\n");
+                    file.write(title2 + "\n");
+                    file.write(write2 + "\n");
+                    file.close();
+                    JOptionPane.showMessageDialog(f,"파일 저장 성공!");
+                } catch (IOException ex) {
+                    System.out.println("파일과 관련된 문제가 생김.");
                 }
 
 
